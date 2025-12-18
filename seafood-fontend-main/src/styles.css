@@ -1,0 +1,262 @@
+/* src/styles.css */
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f3f4f6;
+}
+
+.page {
+  min-height: 100vh;
+}
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background: #0f766e;
+  color: #fff;
+}
+
+.topbar-left h1 {
+  margin: 0;
+  font-size: 20px;
+}
+
+.topbar-user {
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+.topbar-back {
+  color: #d1fae5;
+  text-decoration: none;
+  font-size: 14px;
+  margin-left: 12px;
+}
+
+.topbar-logout {
+  background: #f97316;
+  border: none;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.topbar-logout:hover {
+  background: #ea580c;
+}
+
+.layout {
+  max-width: 1100px;
+  margin: 20px auto;
+  padding: 0 12px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px 20px;
+  box-shadow: 0 1px 3px rgba(15, 23, 42, 0.1);
+}
+
+.card h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Auth page */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #0f766e, #0ea5e9);
+  padding: 16px;
+}
+
+.auth-card {
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px 28px;
+  max-width: 420px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.3);
+}
+
+.auth-card h2 {
+  margin-top: 0;
+  margin-bottom: 4px;
+}
+
+.auth-subtitle {
+  margin: 0 0 16px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.auth-error {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 8px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #374151;
+}
+
+.auth-form input {
+  margin-top: 4px;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.auth-form button {
+  margin-top: 8px;
+  padding: 9px 12px;
+  border-radius: 999px;
+  border: none;
+  background: #0f766e;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.auth-form button:disabled {
+  opacity: 0.7;
+  cursor: default;
+}
+
+/* Forms / table */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.form-grid label {
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-grid input,
+.form-grid textarea {
+  margin-top: 4px;
+  padding: 7px 8px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.form-grid textarea {
+  min-height: 60px;
+  resize: vertical;
+}
+
+.form-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 4px;
+}
+
+.form-actions button {
+  padding: 8px 14px;
+  border-radius: 999px;
+  border: none;
+  background: #0f766e;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.table th,
+.table td {
+  padding: 8px 6px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.table th {
+  text-align: left;
+  background: #f9fafb;
+}
+
+/* Detail */
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 8px;
+  font-size: 14px;
+}
+
+.alert-error {
+  background: #fee2e2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  padding: 8px;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+/* History */
+.history-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.history-item {
+  padding: 8px 10px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 8px;
+  background: #f9fafb;
+}
+
+.history-type {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.history-time {
+  font-size: 12px;
+  color: #6b7280;
+  margin-bottom: 4px;
+}
+
+.history-json {
+  font-size: 12px;
+  background: #111827;
+  color: #e5e7eb;
+  padding: 6px 8px;
+  border-radius: 8px;
+  overflow-x: auto;
+}
